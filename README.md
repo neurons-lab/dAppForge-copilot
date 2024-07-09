@@ -15,15 +15,15 @@ This repository demonstrates the use of a code generation capabilities for block
 To log into the running EC2 instance, use the `.pem` file containing the keys with the following command:
 
 ```bash
-ssh -i "<path_to_your_pem_file_keys>.pem" ubuntu@ec2-23-20-247-78.compute-1.amazonaws.com
+ssh -i "<path_to_your_pem_file_keys>.pem" ubuntu@xxx-xx-xxx-xxx-xxx.compute-x.amazonaws.com
 ```
 
 ## Setup and Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/neurons-lab/dApp-codegen.git
-   cd dApp-codegen
+   git clone https://github.com/neurons-lab/dAppForge-copilot.git
+   cd dAppForge-copilot
    ```
 2. **Create and activate a virtual environment:**
    ```bash
