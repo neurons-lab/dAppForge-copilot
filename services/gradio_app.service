@@ -1,0 +1,14 @@
+# /etc/systemd/system/gradio-app.service
+[Unit]
+Description=Gradio App Service
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dApp-dev/dApp-codegen/demos/gradio
+ExecStart=/home/ubuntu/myenv/bin/python /home/ubuntu/dApp-dev/dApp-codegen/demos/gradio/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
