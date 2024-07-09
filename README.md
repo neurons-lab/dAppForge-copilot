@@ -60,41 +60,28 @@ uvicorn api.main:app --host 0.0.0.0 --port 8081
 ```
 
 ## Directory Descriptions
-
-### `api`
-
-Contains the FastAPI endpoint. Start it using the command mentioned in the Usage section.
-
-### `common`
-
-1. **`config.py`**: Configurations for setting up the LLM settings and Weights & Biases (wandb).
-2. **`inference.py`**: Loads the Knowledge Graph from an S3 bucket and contains the inference function for the LLM for code generation.
-3. **`models.py`**: Pydantic models for AnswerFormat and API code responses.
-4. **`utils.py`**: Helper functions for the Knowledge Graph.
-5. **`config.json`**: Config file containing static variables of AWS S3 information, LLM models, and Wandb infos.
-
-### `code_generation`
-
-#### `kg_construction`
-
-Contains scripts for creating the Knowledge Graph from GitHub repositories and persisting it into an AWS S3 bucket. It also includes scripts for creating the Knowledge Graph from website documentation and loading Knowledge Graphs from the S3 bucket to the local disk.
-
-#### `prompts`
-
-- **`code_completion.prompt`**: Prompt used for code generation to LLM.
-- **`kg_triplets_template.prompt`**: Prompt used to create triplets for the Knowledge Graph.
-- **`text_qa_template.prompt`**: Prompt template for text QA from Llamaindex.
-
-#### `caching`
-
-Contains all the necessary scripts for implementing the Redis caching mechanism.
-
-### `services`
-
-Directory for managing different services that run on the EC2 instance.
-
-## Additional Files
-
-- **`.env.example`**: Example of the `.env` file that needs to be set up.
-- **`.gitignore`**: Specifies files and directories to be ignored by git.
-- **`requirements.txt`**: List of Python dependencies required for the project.
+```
+├── api : Contains the FastAPI endpoint. Start it using the command mentioned in the Usage section. 
+├── common
+│   ├── config.py : Configurations for setting up the LLM settings and Weights & Biases (wandb)
+│   ├── inference.py : Loads the Knowledge Graph from an S3 bucket and contains the inference function for the LLM for code generation.
+│   ├── models.py : Pydantic models for AnswerFormat and API code responses.
+│   ├── utils.py : Helper functions for the Knowledge Graph.
+│   └── config.json : Config file containing static variables of AWS S3 information, LLM models, and Wandb infos.
+├── code_generation : Creating the Knowledge Graph from GitHub repositories and websites.
+│   ├── kg_construction 
+│   │   ├── create_kg_from_github.py
+│   │   ├── create_kg_from_docs.py
+│   │   └── load_kg_from_s3.py
+│   ├── prompts : Prompt used for code generation
+│   │   ├── code_completion.prompt
+│   │   ├── kg_triplets_template.prompt
+│   │   └── text_qa_template.prompt
+│   └── caching : Contains all the necessary scripts for implementing the Redis caching mechanism.
+│       └── redis_caching.py
+├── services : Directory for managing different services that run on the EC2 instance.
+│   └── service_manager.py
+├── .env.example :Example of the `.env` file that needs to be set up.
+├── .gitignore :Specifies files and directories to be ignored by git.
+└── requirements.txt : List of Python dependencies required for the project.
+```
