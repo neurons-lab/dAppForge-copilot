@@ -1,6 +1,9 @@
-# dApp Code Generation
+# dAppForge Copilot
 
 This repository demonstrates the use of a code generation capabilities for blockchain developers. The application uses a Large Language Model for code completion in the Rust programming language and the Substrate framework. Additionally, it is enhanced with a Knowledge Graph and leverages a RAG architecture for improved performance.
+
+# Architecture 
+<img width="7792" alt="dAPP" src="https://github.com/neurons-lab/dAppForge-copilot/assets/5167126/5c3e1ad3-1737-48b7-971a-534a46c54f77">
 
 ## Prerequisites
 
