@@ -78,10 +78,6 @@ Contains the FastAPI endpoint. It can be started using the following command:
 #### kg_construction:
    It contains the necessart ccript for creating the Knowledge Graph from GitHub repositories and persisting the file into an AWS S3 bucket.
    Also it has the script for creating Knwoledge Graph from website documentations. Inside the directory, you can also find the script for loading knowledge graphs from s3 bucket and persisting them into local disk.
-##### notebooks/: 
-   Jupyter notebooks for different Knowledge Graph creations.
-```substrate_kg_creation.ipynb ```:
-   Notebook for creating the Knowledge Graph from all Substrate documentation.
 
 #### prompts:
 ```code_completion.prompt:``` Prompt used for code generation to LLM.
@@ -90,12 +86,6 @@ Contains the FastAPI endpoint. It can be started using the following command:
 
 #### caching
 Here you find all the necessary scripts for implementation of Redis caching mechanism.
-
-## demos
-   #### gradio_app:
-   New version of the demo app for code completion, sub-plotting of the Knowledge Graph, and full Knowledge Graph plotting features.
-   #### streamlit_app: 
-   First version of the demo app, that contains predefined examples for testing code completion and has different input options.
 
 ## experiments
 Folder containing various Jupyter notebooks and scripts used for different development purposes.
