@@ -46,7 +46,6 @@ ssh -i "<path_to_your_pem_file_keys>.pem" ubuntu@xxx-xx-xxx-xxx-xxx.compute-x.am
    WANDB_API_KEY=<your_wandb_key_here>
    AWS_ACCESS_KEY_ID=<aws_access_key_here>
    AWS_SECRET_ACCESS_KEY=<aws_secret_access_key_here>
-   OPENAI_API_KEY=<open_ai_key_here>
    GITHUB_TOKEN=<github_token_here>
    ```
 
