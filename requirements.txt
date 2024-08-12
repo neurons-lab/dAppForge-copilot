@@ -23,7 +23,7 @@ llama-parse==0.4.2
 llamaindex-py-client==0.1.19
 llvmlite==0.42.0
 networkx==3.3
-streamlit==1.33.0
+streamlit==1.37.0
 striprtf==0.0.26
 tenacity==8.2.3
 terminado==0.18.1
