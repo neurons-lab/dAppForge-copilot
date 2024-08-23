@@ -3,7 +3,7 @@ kuzu==0.1.0
 llama-index==0.10.33
 llama-index-agent-openai==0.2.4
 llama-index-cli==0.1.12
-llama-index-core==0.10.36
+llama-index-core==0.10.38
 llama-index-embeddings-bedrock==0.1.5
 llama-index-embeddings-openai==0.1.9
 llama-index-graph-stores-kuzu==0.1.3
